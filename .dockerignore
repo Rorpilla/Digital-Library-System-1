@@ -1,0 +1,11 @@
+.git
+.vscode
+.github
+**/.DS_Store
+**/tmp_images
+**/php-server.err.log
+**/php-server.out.log
+**/server.log
+**/server.pid
+**/*.log
+**/tmp_*
