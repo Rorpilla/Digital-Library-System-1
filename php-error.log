@@ -1,0 +1,70 @@
+[14-Sep-2026 14:39:19 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:20 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:22 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:22 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:42 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:42 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:43 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:39:43 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:40:46 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10
+[14-Sep-2026 14:40:46 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php:10
+Stack trace:
+#0 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php(10): PDO->__construct('sqlite:C:\\Users...')
+#1 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\init.php(3): require('C:\\Users\\RomelG...')
+#2 C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\index.php(6): require('C:\\Users\\RomelG...')
+#3 {main}
+  thrown in C:\Users\RomelGwapo\Documents\free-claude-code-main\digital-library\db.php on line 10

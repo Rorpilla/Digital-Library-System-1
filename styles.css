@@ -1,24 +1,24 @@
 :root {
-    --color-background: #07090B;
-    --color-background-secondary: #0D1013;
-    --color-background-tertiary: #12161A;
-    --color-surface: #12161A;
-    --color-surface-elevated: #181D22;
-    --color-surface-hover: #1E242A;
-    --color-text-primary: #F3EEE7;
-    --color-text-secondary: #B9B3A9;
-    --color-text-muted: #8D897F;
-    --color-border: rgba(255,255,255,0.08);
-    --color-border-strong: rgba(255,255,255,0.12);
-    --color-accent: #C89F67;
-    --color-accent-hover: #D4B07A;
-    --color-accent-muted: rgba(200,159,103,0.16);
-    --bg-panel: rgba(12, 15, 18, 0.8);
-    --panel-stroke: rgba(255,255,255,0.08);
+    --color-background: #fbf8f2;
+    --color-background-secondary: #f3eadc;
+    --color-background-tertiary: #eadbc7;
+    --color-surface: #fffdf9;
+    --color-surface-elevated: #fffaf2;
+    --color-surface-hover: #f4eadc;
+    --color-text-primary: #3e2a1d;
+    --color-text-secondary: #765b45;
+    --color-text-muted: #9a8069;
+    --color-border: rgba(111, 75, 45, 0.16);
+    --color-border-strong: rgba(111, 75, 45, 0.28);
+    --color-accent: #8a5a35;
+    --color-accent-hover: #a8754b;
+    --color-accent-muted: rgba(138, 90, 53, 0.13);
+    --bg-panel: rgba(255, 253, 249, 0.88);
+    --panel-stroke: rgba(111, 75, 45, 0.16);
     --text: var(--color-text-primary);
     --muted: var(--color-text-secondary);
     --warm: var(--color-accent);
-    --shadow: 0 22px 60px rgba(0, 0, 0, 0.26);
+    --shadow: 0 22px 60px rgba(91, 57, 31, 0.14);
 }
 
 * {
@@ -27,15 +27,18 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: clip;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    max-width: 100%;
     font-family: Inter, 'Segoe UI', sans-serif;
     color: var(--color-text-primary);
     background:
-        linear-gradient(180deg, rgba(4, 7, 10, 0.72), rgba(8, 11, 15, 0.88)),
+        linear-gradient(180deg, rgba(251, 248, 242, 0.9), rgba(243, 234, 220, 0.94)),
         url('pictures/JZGMSAT School.png') center center / cover no-repeat fixed;
     overflow-x: hidden;
 }
@@ -2420,4 +2423,572 @@ main {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* Light parchment theme and fluid layout overrides. */
+body {
+    background-color: var(--color-background);
+}
+
+.site-header,
+.card,
+.book-card,
+.form-card,
+.stat-card,
+.empty-state,
+.alert,
+.library-discovery,
+.results-section,
+.editorial-showcase,
+.intro-card,
+.footer-card,
+.usage-chart,
+.usage-ranking {
+    background: rgba(255, 253, 249, 0.92);
+    border-color: var(--panel-stroke);
+    box-shadow: var(--shadow);
+}
+
+.site-header,
+.site-header.is-scrolled {
+    background: rgba(255, 253, 249, 0.9);
+    border-color: var(--color-border);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active {
+    color: var(--color-text-primary);
+    background: rgba(138, 90, 53, 0.08);
+}
+
+.nav-link--button,
+.nav-link--button:hover {
+    color: #6f472b;
+    background: var(--color-accent-muted);
+    border-color: var(--color-border-strong);
+}
+
+.button--primary {
+    background: #6f472b;
+    color: #fffdf9;
+}
+
+.button--primary:hover {
+    background: var(--color-accent-hover);
+    color: #fffdf9;
+}
+
+.button--ghost,
+.button--secondary {
+    background: #f3eadc;
+    color: #5f3f29;
+    border-color: var(--color-border-strong);
+}
+
+.button--ghost:hover,
+.button--secondary:hover {
+    background: #eadbc7;
+    color: #3e2a1d;
+}
+
+.search-panel,
+.search-shell input,
+.form-field input,
+.form-field select,
+.form-field textarea {
+    background: #fffdf9;
+    border-color: var(--color-border-strong);
+    color: var(--color-text-primary);
+}
+
+.filter-pill,
+.compact-meta span,
+.feature-item,
+.metric-pill,
+.showcase-badge,
+.form-card__eyebrow {
+    background: rgba(138, 90, 53, 0.07);
+    border-color: var(--color-border);
+}
+
+.filter-pill.is-active,
+.filter-pill:hover {
+    background: rgba(138, 90, 53, 0.15);
+    border-color: rgba(138, 90, 53, 0.3);
+    color: var(--color-text-primary);
+}
+
+.hero-stage {
+    background:
+        linear-gradient(90deg, rgba(251, 248, 242, 0.47) 0%, rgba(251, 248, 242, 0.39) 38%, rgba(243, 234, 220, 0.45) 100%),
+        linear-gradient(135deg, rgba(138, 90, 53, 0.06), rgba(255, 253, 249, 0.1)),
+        url('pictures/JZGMSAT School.png') center 42% / cover no-repeat;
+    border-color: var(--color-border);
+}
+
+.hero-stage .publication-canvas::before {
+    border-color: rgba(111, 75, 45, 0.12);
+    background: linear-gradient(135deg, rgba(255, 253, 249, 0.3), rgba(138, 90, 53, 0.04));
+}
+
+.hero-copy h1,
+.hero-copy p,
+.hero-copy .eyebrow,
+.hero-metrics,
+.metric-pill span {
+    color: var(--color-text-primary);
+}
+
+.hero-copy p,
+.metric-pill span,
+.site-subtitle,
+.form-card__intro,
+.book-card__description,
+.results-header p,
+.footer,
+.reader-note {
+    color: var(--color-text-secondary);
+}
+
+.eyebrow,
+.metric-pill {
+    background: rgba(255, 253, 249, 0.76);
+    border-color: var(--color-border);
+}
+
+.book-card {
+    background: linear-gradient(180deg, rgba(255, 253, 249, 0.98), rgba(243, 234, 220, 0.92));
+}
+
+.book-cover-preview {
+    background: linear-gradient(135deg, #8a5a35, #c49b70);
+    color: #fffdf9;
+}
+
+.book-cover-image {
+    background: #f3eadc;
+    border-color: var(--color-border);
+}
+
+.intro-card,
+.footer-card {
+    background: rgba(255, 253, 249, 0.9);
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 100%;
+        padding-inline: clamp(14px, 3vw, 24px);
+    }
+
+    .site-header {
+        border-radius: 24px;
+    }
+
+    .usage-statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .showcase-tile--large {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        padding-top: 12px;
+        padding-bottom: 32px;
+    }
+
+    .site-header {
+        position: relative;
+        top: 0;
+        align-items: flex-start;
+        padding: 12px 14px;
+    }
+
+    .site-brand {
+        width: 100%;
+    }
+
+    .site-title {
+        font-size: 0.96rem;
+    }
+
+    .site-subtitle {
+        font-size: 0.74rem;
+    }
+
+    .site-brand__mark {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .hero-immersive {
+        min-height: 190vh;
+    }
+
+    .hero-stage {
+        min-height: min(720px, 100svh);
+        height: 100svh;
+        border-radius: 22px;
+    }
+
+    .hero-copy {
+        left: 20px;
+        top: 38%;
+        max-width: min(58vw, 300px);
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(2.5rem, 12vw, 4.4rem);
+    }
+
+    .hero-copy p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .hero-actions .button {
+        width: auto;
+        padding: 12px 16px;
+    }
+
+    .publication-canvas {
+        transform-origin: 66% 50%;
+        zoom: 0.68;
+    }
+
+    .publication--one,
+    .publication--two,
+    .publication--four,
+    .publication--five {
+        opacity: 0.74;
+    }
+
+    .book-scene {
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    .book-shell {
+        animation-duration: 8.5s;
+    }
+
+    .hero-metrics {
+        left: 16px;
+        right: 16px;
+        bottom: 14px;
+        gap: 8px;
+    }
+
+    .metric-pill {
+        padding: 8px 10px;
+        font-size: 0.78rem;
+    }
+
+    .feature-strip,
+    .showcase-grid,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-tile--large {
+        grid-column: auto;
+    }
+
+    .card,
+    .library-discovery,
+    .results-section,
+    .editorial-showcase {
+        border-radius: 20px;
+    }
+
+    .library-discovery,
+    .results-section {
+        padding: 18px;
+    }
+
+    .discovery-header,
+    .results-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-actions,
+    .library-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .form-actions .button,
+    .library-actions .button,
+    .library-actions form,
+    .library-actions form .button {
+        width: 100%;
+    }
+
+    .usage-chart__row {
+        grid-template-columns: minmax(80px, 0.8fr) minmax(60px, 1.5fr) 28px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-stage {
+        min-height: 580px;
+    }
+
+    .hero-copy {
+        top: 32%;
+        max-width: 62vw;
+    }
+
+    .hero-copy h1 {
+        line-height: 0.82;
+    }
+
+    .hero-copy p {
+        display: none;
+    }
+
+    .publication-canvas {
+        transform-origin: 70% 52%;
+        zoom: 0.58;
+    }
+
+    .book-scene {
+        transform: scale(1);
+    }
+
+    .floating-letter {
+        font-size: 2rem !important;
+    }
+
+    .feature-strip {
+        padding: 12px;
+    }
+
+    .feature-item,
+    .showcase-tile {
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    .book-card__title {
+        font-size: 1.04rem;
+    }
+}
+
+/* Warm glass theme for the interface outside the protected hero scene. */
+body {
+    background: url('pictures/JZGMSAT School.png') center center / cover no-repeat fixed;
+}
+
+.site-header,
+.admin-layout .site-header {
+    background: #3b271d;
+    border: 1px solid rgba(235, 211, 177, 0.26);
+    box-shadow: 0 18px 42px rgba(70, 43, 25, 0.22);
+}
+
+.site-header.is-scrolled {
+    background: #2f1e17;
+    border-color: rgba(235, 211, 177, 0.34);
+}
+
+.site-title,
+.site-subtitle,
+.site-brand,
+.nav-link,
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active {
+    color: #fff8ed;
+}
+
+.site-subtitle { color: #dfcbb3; }
+
+.site-brand__mark {
+    border-color: rgba(255, 244, 224, 0.28);
+    box-shadow: 0 10px 24px rgba(20, 12, 8, 0.24);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active {
+    background: rgba(255, 248, 235, 0.1);
+}
+
+.nav-link--button {
+    color: #fff4de;
+    background: rgba(206, 157, 98, 0.2);
+    border-color: rgba(232, 198, 148, 0.42);
+}
+
+main,
+.admin-page { background: transparent; }
+
+.card,
+.library-discovery,
+.results-section,
+.editorial-showcase,
+.editorial-quote,
+.admin-layout > .card,
+.admin-layout > .form-card,
+.footer-card {
+    background: rgba(255, 250, 243, 0.66);
+    border: 1px solid rgba(111, 75, 45, 0.2);
+    box-shadow: 0 22px 55px rgba(91, 57, 31, 0.13);
+    backdrop-filter: blur(18px);
+}
+
+.card::before,
+.book-card::before {
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+}
+
+.feature-item,
+.usage-chart,
+.usage-ranking,
+.showcase-tile,
+.search-panel,
+.filter-pill,
+.metric-pill {
+    background: rgba(255, 252, 247, 0.44);
+    border-color: rgba(111, 75, 45, 0.16);
+}
+
+.showcase-tile,
+.showcase-tile--large,
+.showcase-tile--medium,
+.showcase-tile.alt {
+    background:
+        linear-gradient(135deg, rgba(126, 85, 53, 0.82), rgba(71, 45, 31, 0.78)),
+        radial-gradient(circle at top left, rgba(238, 204, 157, 0.3), transparent 42%);
+}
+
+.button--primary {
+    background: #6d432b;
+    color: #fff8ed;
+    box-shadow: 0 12px 25px rgba(109, 67, 43, 0.2);
+}
+
+.button--primary:hover { background: #4f2f20; }
+
+.button--secondary,
+.button--ghost {
+    background: rgba(255, 252, 247, 0.46);
+    border-color: rgba(111, 75, 45, 0.24);
+    color: #3c291e;
+}
+
+.button--secondary:hover,
+.button--ghost:hover { background: rgba(255, 248, 238, 0.82); }
+
+.search-panel input,
+.search-shell input,
+.form-field input,
+.form-field select,
+.form-field textarea {
+    background: rgba(255, 253, 249, 0.68);
+    border: 1px solid rgba(111, 75, 45, 0.22);
+    color: var(--color-text-primary);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.search-panel input::placeholder,
+.search-shell input::placeholder,
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: #a1846b; }
+
+.search-panel input:focus,
+.search-shell input:focus,
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(149, 97, 59, 0.14);
+}
+
+.filter-pill { color: #705744; }
+
+.filter-pill.is-active,
+.filter-pill:hover {
+    background: #6d432b;
+    border-color: #6d432b;
+    color: #fff8ed;
+}
+
+.book-card {
+    background: rgba(255, 252, 247, 0.62);
+    border: 1px solid rgba(111, 75, 45, 0.2);
+    box-shadow: 0 16px 34px rgba(91, 57, 31, 0.1);
+}
+
+.book-card:hover {
+    background: rgba(255, 253, 249, 0.82);
+    border-color: rgba(149, 97, 59, 0.42);
+    box-shadow: 0 22px 42px rgba(91, 57, 31, 0.17);
+}
+
+.book-cover-image,
+.book-cover-preview { border-color: rgba(111, 75, 45, 0.18); }
+
+.book-cover-preview {
+    background: linear-gradient(135deg, #c69d70, #765035);
+    color: #fff8ed;
+}
+
+.book-card__meta,
+.book-card__description,
+.results-header p,
+.form-card__intro,
+.footer,
+.footer-card p { color: #705744; }
+
+.book-card__title,
+.results-header h2,
+.form-card__header h1,
+.footer-card h2 { color: #3c291e; }
+
+.book-card__tag,
+.book-card__arrow,
+.form-card__eyebrow,
+.compact-meta span { color: #95613b; }
+
+.footer { border-top-color: rgba(111, 75, 45, 0.2); }
+
+@media (max-width: 760px) {
+    .site-header,
+    .admin-layout .site-header { border-radius: 22px; }
+
+    .book-card,
+    .library-layout .book-card { min-width: 0; }
+
+    .library-layout .library-actions {
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .library-layout .library-actions .button,
+    .library-layout .library-actions form { flex: 1 1 140px; }
+}
+
+.editorial-showcase,
+.library-discovery,
+.results-section {
+    background: rgba(255, 250, 243, 0.75);
 }

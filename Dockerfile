@@ -11,6 +11,9 @@ RUN apt-get update \
 # Copy the application
 COPY . /var/www/html
 
+# Persist upload limits in the Apache PHP runtime.
+COPY php-upload.ini /usr/local/etc/php/conf.d/99-digital-library-upload.ini
+
 # Make the application writable
 RUN mkdir -p /var/www/html/data \
     && chown -R www-data:www-data /var/www/html
