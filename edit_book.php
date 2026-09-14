@@ -92,8 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Edit Book | Jacobo Z. Gonzales Memorial School of Arts and Trades</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<div class="container">
+<body class="admin-page">
+<div class="container admin-layout">
     <header class="site-header">
         <a class="site-brand" href="index.php">
             <img src="jzgmsat logo.jpg" alt="School logo" class="site-brand__mark" style="width:56px;height:56px;object-fit:cover;border-radius:12px;">

@@ -273,7 +273,7 @@ if ($search !== '') {
                         </div>
                     </div>
 
-                    <form class="search-panel" method="get" action="index.php">
+                    <form class="search-panel" method="get" action="index.php#discover">
                         <input type="text" name="search" value="<?= escape_html($search !== '' ? $search : 'Search books, authors, topics...') ?>" aria-label="Search library" onfocus="if(this.value==='Search books, authors, topics...'){this.value='';}" onblur="if(this.value===''){this.value='Search books, authors, topics...';}">
                         <button class="button button--primary" type="submit">Explore Library</button>
                     </form>
